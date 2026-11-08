@@ -1,16 +1,18 @@
 <!doctype html>
 <html lang="uk">
-<head>
+<head><link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f0b400">
+<link rel="icon" href="icon-192.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Електросамокати RNG</title>
+<title>index</title>
 <style>
 :root{--bg:#e9e7e0;--sf:#f7f5ef;--ink:#1d232b;--mut:#66707b;--line:#cdcac0;--acc:#f0b400;--on:#1a1500;--bad:#c0392b;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15191f;--sf:#1f252d;--ink:#eceae3;--mut:#98a1ad;--line:#313a45;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#15191f;--sf:#1f252d;--ink:#eceae3;--mut:#98a1ad;--line:#313a45;color-scheme:dark}
 html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
-body{height:100%;margin:0;display:flex;flex-direction:column;background:var(--bg);color:var(--ink);
+body<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js')</script>{height:100%;margin:0;display:flex;flex-direction:column;background:var(--bg);color:var(--ink);
 font-family:"Bahnschrift","DIN Alternate","Roboto Condensed",system-ui,-apple-system,"Segoe UI",sans-serif;font-variant-numeric:tabular-nums;overflow:hidden;-webkit-tap-highlight-color:transparent}
 button{font:inherit;color:inherit;cursor:pointer}
 header{padding:14px 18px 8px;display:flex;justify-content:space-between;align-items:flex-end}
